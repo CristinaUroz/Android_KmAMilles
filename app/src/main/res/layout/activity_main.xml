@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.upc.eseiaat.pma.kmamilles.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/edit_kilometres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_kilometres"
+            android:layout_alignBottom="@+id/label_kilometres"
+            android:layout_toEndOf="@+id/button_a_miles"
+            android:layout_toRightOf="@+id/button_a_miles"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_miles"
+            android:layout_alignBottom="@+id/label_miles"
+            android:layout_toEndOf="@+id/button_a_miles"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/label_kilometres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/Quilòmetres"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/label_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button_a_miles"
+            android:layout_marginTop="36dp"
+            android:text="@string/Milles"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_a_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_a_kilometres"
+            android:layout_alignBottom="@+id/button_a_kilometres"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:text="@string/AMilles" />
+
+        <Button
+            android:id="@+id/button_a_kilometres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit_kilometres"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/AQuilòmetres" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

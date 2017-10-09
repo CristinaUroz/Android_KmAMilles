@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KmAMilles</string>
+    <string name="Quilòmetres">Quilòmetres</string>
+    <string name="Milles">Milles</string>
+    <string name="AMilles">A Milles</string>
+    <string name="AQuilòmetres">A Quilòmetres</string>
+</resources>
